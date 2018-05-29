@@ -30,12 +30,15 @@ namespace CaterBll
             return miDal.Delete(id) > 0;
         }
 
-        public LoginState Login(string name,string pwd)
+        public LoginState Login(string name,string pwd,out int type)
         {
+            //设置type默认值,如果为此值时,不会使用
+            type = -1;
             //根据用户名进行对象的查询
            ManagerInfo mi= miDal.GetByName(name);
             if (mi==null)
             {//用户名错误
+                
                 return LoginState.NameError;
             }
             else
@@ -43,6 +46,7 @@ namespace CaterBll
                 if (mi.MPwd.Equals(Md5Helper.EncryptString( pwd)))
                 {
                     //密码正确
+                    type = mi.MType;
                     return LoginState.Ok;
                 }
                 else

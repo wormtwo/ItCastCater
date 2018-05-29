@@ -30,12 +30,14 @@ namespace CaterUI
             string name = txtName.Text;
             string pwd = txtPwd.Text;
             //调用代码
+            int type;
             ManagerInfoBll miBll = new ManagerInfoBll();
-            LoginState loginState = miBll.Login(name, pwd);
+            LoginState loginState = miBll.Login(name, pwd,out type);
             switch (loginState)
             {
                 case LoginState.Ok:
                     FormMain main = new FormMain();
+                    main.Tag = type;//将员工级别传递过去
                     main.Show();
                     //将登陆窗体隐藏
                     this.Hide();

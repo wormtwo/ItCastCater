@@ -121,10 +121,12 @@ namespace CaterDal
                     MPwd = dt.Rows[0][2].ToString(),
                     MType = Convert.ToInt32(dt.Rows[0][3])
                 };
+                
             }
             else
             {
-                    //用户名不存在
+                //用户名不存在
+                
             }
             return mi;
         }
