@@ -1,0 +1,13 @@
+解决System.Data.SQLite兼容32位和64位问题
+
+将当前说明文档的目录下的x64、x86目录和System.Data.SQLite.dll文件复制到您的应用程序根目录中（注意更新引用）。
+如果是WEB网站，则复制到Bin目录下即可，发布时，也注意x64和x86一起打包发布
+
+注意，当前的System.Data.SQLite.dll是完全的托管代码，不是混合程序集，文件大小为两百多KB，
+如果你使用的是八百多KB以上的，说明你使用的是混合程序集，混合程序集是指定的处理器架构的，无法在不同架构下使用
+
+所谓混合程序集的System.Date.SQLite指的是包含了托管的代码和Native的C/C++代码，本解决办法提供的System.Data.SQLite的为完全的托管
+代码，必须配合Native Interop dll才能使用
+
+
+注意：System.Data.SQLite必须是1.0.86.0及其以上版本
