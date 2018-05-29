@@ -1,4 +1,5 @@
-﻿using CaterDal;
+﻿using CaterCommon;
+using CaterDal;
 using CaterModel;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,6 @@ namespace CaterBll
         {
             return miDal.GetList();
         }
-
         public bool Add(ManagerInfo mi)
         {
             //调用dal层的insert方法
@@ -28,6 +28,30 @@ namespace CaterBll
         public bool Remove(int id)
         {
             return miDal.Delete(id) > 0;
+        }
+
+        public LoginState Login(string name,string pwd)
+        {
+            //根据用户名进行对象的查询
+           ManagerInfo mi= miDal.GetByName(name);
+            if (mi==null)
+            {//用户名错误
+                return LoginState.NameError;
+            }
+            else
+            {//用户名正确
+                if (mi.MPwd.Equals(Md5Helper.EncryptString( pwd)))
+                {
+                    //密码正确
+                    return LoginState.Ok;
+                }
+                else
+                {
+                    //密码错误
+                    return LoginState.PwdError;
+                }
+
+            }
         }
     }
 }

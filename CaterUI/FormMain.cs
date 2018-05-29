@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CaterUI.test
+namespace CaterUI
 {
-    public partial class FormManagerInfo : Form
+    public partial class FormMain : Form
     {
-        public FormManagerInfo()
+        public FormMain()
         {
             InitializeComponent();
         }

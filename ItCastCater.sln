@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{13895191-B898-40D8-8F1C-0722644BF091}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaterUI", "CaterUI\CaterUI.csproj", "{E32219B5-9B7E-471E-AA86-692209F2E17C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaterBll", "CaterBll\CaterBll.csproj", "{4C6E1B6B-65C2-478B-B0D0-4756011BE466}"

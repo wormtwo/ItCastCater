@@ -52,7 +52,6 @@ namespace CaterUI
                 {
                     //如果添加成功,则重新加载数据
                     LoadList();
-
                 }
                 else
                 {
@@ -146,5 +145,7 @@ namespace CaterUI
                 MessageBox.Show("请先选择要删除的行");
             }
         }
+
+        
     }
 }

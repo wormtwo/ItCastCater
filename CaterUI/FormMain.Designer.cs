@@ -1,6 +1,6 @@
-﻿namespace CaterUI.test
+﻿namespace CaterUI
 {
-    partial class FormManagerInfo
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // FormManagerInfo
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 318);
-            this.Name = "FormManagerInfo";
-            this.Text = "FormManageInfo";
-            this.ResumeLayout(false);
-
+            this.Text = "FormMain";
         }
 
         #endregion
