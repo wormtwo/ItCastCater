@@ -51,5 +51,14 @@ namespace CaterUI
               
             }
         }
+
+       
+
+        private void FormLogin_Activated(object sender, EventArgs e)
+        {
+            txtName.Focus();
+            txtName.Text = "dsm";
+            txtPwd.Text = "123";
+        }
     }
 }

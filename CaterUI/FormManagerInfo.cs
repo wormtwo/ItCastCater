@@ -14,11 +14,20 @@ namespace CaterUI
 {
     public partial class FormManagerInfo : Form
     {
-        public FormManagerInfo()
+        private FormManagerInfo()
         {
             InitializeComponent();
         }
-
+        //实现窗体的单例
+        private static FormManagerInfo _form;
+        public static FormManagerInfo Create()
+        {
+            if (_form==null)
+            {
+                _form = new FormManagerInfo();
+            }
+            return _form;
+        }
         private void FormManagerInfo_Load(object sender, EventArgs e)
         {
             //加载列表
@@ -146,6 +155,11 @@ namespace CaterUI
             }
         }
 
-        
+        private void FormManagerInfo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //与单例保持一致
+            //出现这种代码的原因:Form的close()会释放当前窗体对象
+            _form = null;
+        }
     }
 }

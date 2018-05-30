@@ -40,9 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DishInfo.cs" />
+    <Compile Include="DishTypeInfo.cs" />
+    <Compile Include="HallInfo.cs" />
     <Compile Include="LoginState.cs" />
     <Compile Include="ManagerInfo.cs" />
+    <Compile Include="MemberInfo.cs" />
+    <Compile Include="MemberTypeInfo.cs" />
+    <Compile Include="OrderDetailInfo.cs" />
+    <Compile Include="OrderInfo.cs" />
+    <Compile Include="OtherClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

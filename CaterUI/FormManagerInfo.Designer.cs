@@ -69,43 +69,37 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(432, 16);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(324, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(309, 349);
+            this.groupBox1.Size = new System.Drawing.Size(232, 279);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "添加\\修改";
-           
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label6.Location = new System.Drawing.Point(36, 160);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(27, 128);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(247, 15);
+            this.label6.Size = new System.Drawing.Size(197, 12);
             this.label6.TabIndex = 13;
             this.label6.Text = "这里只是提示，与实际密码位数无关";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(73, 36);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtId.Location = new System.Drawing.Point(55, 29);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(225, 25);
+            this.txtId.Size = new System.Drawing.Size(170, 21);
             this.txtId.TabIndex = 12;
             this.txtId.Text = "添加时无编号";
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(40, 312);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRemove.Location = new System.Drawing.Point(30, 250);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(224, 29);
+            this.btnRemove.Size = new System.Drawing.Size(168, 23);
             this.btnRemove.TabIndex = 4;
             this.btnRemove.Text = "删除选中的店员";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -115,20 +109,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(13, 281);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(10, 225);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(262, 15);
+            this.label4.Size = new System.Drawing.Size(209, 12);
             this.label4.TabIndex = 11;
             this.label4.Text = "提示：双击表格项可以在此处进行修改";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(10, 31);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.Size = new System.Drawing.Size(41, 12);
             this.label5.TabIndex = 11;
             this.label5.Text = "编号：";
             // 
@@ -136,10 +128,9 @@
             // 
             this.rb2.AutoSize = true;
             this.rb2.Checked = true;
-            this.rb2.Location = new System.Drawing.Point(160, 195);
-            this.rb2.Margin = new System.Windows.Forms.Padding(4);
+            this.rb2.Location = new System.Drawing.Point(120, 156);
             this.rb2.Name = "rb2";
-            this.rb2.Size = new System.Drawing.Size(58, 19);
+            this.rb2.Size = new System.Drawing.Size(47, 16);
             this.rb2.TabIndex = 10;
             this.rb2.TabStop = true;
             this.rb2.Text = "店员";
@@ -148,10 +139,9 @@
             // rb1
             // 
             this.rb1.AutoSize = true;
-            this.rb1.Location = new System.Drawing.Point(73, 195);
-            this.rb1.Margin = new System.Windows.Forms.Padding(4);
+            this.rb1.Location = new System.Drawing.Point(55, 156);
             this.rb1.Name = "rb1";
-            this.rb1.Size = new System.Drawing.Size(58, 19);
+            this.rb1.Size = new System.Drawing.Size(47, 16);
             this.rb1.TabIndex = 9;
             this.rb1.Text = "经理";
             this.rb1.UseVisualStyleBackColor = true;
@@ -159,19 +149,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 195);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(7, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 8;
             this.label3.Text = "类型：";
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(160, 238);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(120, 190);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 29);
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "取消";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -179,10 +167,9 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(36, 238);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(27, 190);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 29);
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "添加";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -190,49 +177,43 @@
             // 
             // txtPwd
             // 
-            this.txtPwd.Location = new System.Drawing.Point(73, 128);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPwd.Location = new System.Drawing.Point(55, 102);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
-            this.txtPwd.Size = new System.Drawing.Size(225, 25);
+            this.txtPwd.Size = new System.Drawing.Size(170, 21);
             this.txtPwd.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 131);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(8, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 2;
             this.label2.Text = "密码：";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(73, 82);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Location = new System.Drawing.Point(55, 66);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(225, 25);
+            this.txtName.Size = new System.Drawing.Size(170, 21);
             this.txtName.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 88);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(7, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "用户名：";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvList);
-            this.groupBox2.Location = new System.Drawing.Point(11, 13);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(8, 10);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(413, 352);
+            this.groupBox2.Size = new System.Drawing.Size(310, 282);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "列表";
@@ -247,14 +228,13 @@
             this.Column2,
             this.Column3});
             this.dgvList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvList.Location = new System.Drawing.Point(4, 22);
-            this.dgvList.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvList.Location = new System.Drawing.Point(3, 17);
             this.dgvList.MultiSelect = false;
             this.dgvList.Name = "dgvList";
             this.dgvList.ReadOnly = true;
             this.dgvList.RowTemplate.Height = 23;
             this.dgvList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvList.Size = new System.Drawing.Size(405, 326);
+            this.dgvList.Size = new System.Drawing.Size(304, 262);
             this.dgvList.TabIndex = 0;
             this.dgvList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvList_CellDoubleClick);
             this.dgvList.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvList_CellFormatting);
@@ -282,13 +262,15 @@
             // 
             // FormManagerInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 373);
+            this.ClientSize = new System.Drawing.Size(566, 298);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormManagerInfo";
             this.Text = "店员管理";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormManagerInfo_FormClosing);
             this.Load += new System.EventHandler(this.FormManagerInfo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

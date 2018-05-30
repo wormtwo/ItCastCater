@@ -42,5 +42,12 @@ namespace CaterUI
                 menuManagerInfo.Visible = false;
             }
         }
+
+        private void menuManagerInfo_Click(object sender, EventArgs e)
+        {
+            FormManagerInfo formManagerInfo = FormManagerInfo.Create();
+            formManagerInfo.Show();
+            formManagerInfo.Focus();
+        }
     }
 }

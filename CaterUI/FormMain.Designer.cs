@@ -61,15 +61,16 @@
             this.menuManagerInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.menuManagerInfo.Image = global::CaterUI.Properties.Resources.menuManager;
             this.menuManagerInfo.Name = "menuManagerInfo";
-            this.menuManagerInfo.Size = new System.Drawing.Size(28, 20);
+            this.menuManagerInfo.Size = new System.Drawing.Size(76, 68);
             this.menuManagerInfo.Text = "toolStripMenuItem1";
+            this.menuManagerInfo.Click += new System.EventHandler(this.menuManagerInfo_Click);
             // 
             // menuMemberInfo
             // 
             this.menuMemberInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.menuMemberInfo.Image = global::CaterUI.Properties.Resources.menuMember;
             this.menuMemberInfo.Name = "menuMemberInfo";
-            this.menuMemberInfo.Size = new System.Drawing.Size(28, 20);
+            this.menuMemberInfo.Size = new System.Drawing.Size(76, 68);
             this.menuMemberInfo.Text = "toolStripMenuItem2";
             // 
             // menuTableInfo
@@ -77,7 +78,7 @@
             this.menuTableInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.menuTableInfo.Image = global::CaterUI.Properties.Resources.menuTable;
             this.menuTableInfo.Name = "menuTableInfo";
-            this.menuTableInfo.Size = new System.Drawing.Size(28, 20);
+            this.menuTableInfo.Size = new System.Drawing.Size(76, 68);
             this.menuTableInfo.Text = "toolStripMenuItem3";
             // 
             // menuDishInfo
@@ -85,7 +86,7 @@
             this.menuDishInfo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.menuDishInfo.Image = global::CaterUI.Properties.Resources.menuDish;
             this.menuDishInfo.Name = "menuDishInfo";
-            this.menuDishInfo.Size = new System.Drawing.Size(28, 20);
+            this.menuDishInfo.Size = new System.Drawing.Size(76, 68);
             this.menuDishInfo.Text = "toolStripMenuItem4";
             // 
             // menuOrder
@@ -93,7 +94,7 @@
             this.menuOrder.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.menuOrder.Image = global::CaterUI.Properties.Resources.menuOrder;
             this.menuOrder.Name = "menuOrder";
-            this.menuOrder.Size = new System.Drawing.Size(28, 20);
+            this.menuOrder.Size = new System.Drawing.Size(76, 68);
             this.menuOrder.Text = "toolStripMenuItem5";
             // 
             // menuQuit

@@ -82,11 +82,14 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLogin";
             this.Text = "登录";
+            this.Activated += new System.EventHandler(this.FormLogin_Activated);
+          
             this.ResumeLayout(false);
             this.PerformLayout();
 
