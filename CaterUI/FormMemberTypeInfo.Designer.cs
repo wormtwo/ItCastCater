@@ -217,6 +217,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "FormMemberTypeInfo";
             this.Text = "会员分类管理";
+           
             this.Load += new System.EventHandler(this.FormMemberTypeInfo_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();

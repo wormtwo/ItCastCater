@@ -15,10 +15,11 @@ namespace CaterUI
     public partial class FormMemberTypeInfo : Form
     {
         MemberTypeInfoBll mtiBll = new MemberTypeInfoBll();
-        public FormMemberTypeInfo()
+        public  FormMemberTypeInfo()
         {
             InitializeComponent();
         }
+       
 
         private void FormMemberTypeInfo_Load(object sender, EventArgs e)
         {
@@ -101,5 +102,7 @@ namespace CaterUI
                 MessageBox.Show("删除失败");
             }
         }
+
+       
     }
 }

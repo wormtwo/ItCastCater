@@ -1,7 +1,9 @@
-﻿using CaterDal;
+﻿using CasterDal;
+using CaterDal;
 using CaterModel;
 using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +16,18 @@ namespace CaterBll
         public List<MemberInfo> GetList(Dictionary<string,string>dic)
         {
             return miDal.GetList(dic);
+        }
+        public bool Add(MemberInfo mi)
+        {
+            return miDal.Insert(mi)>0;
+        }
+        public bool Edit(MemberInfo mi)
+        {
+            return miDal.Update(mi) > 0;
+        }
+        public bool Remove(int id)
+        {
+            return miDal.Delete(id) > 0;
         }
     }
 }

@@ -3,6 +3,7 @@ using CaterModel;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,8 +27,6 @@ namespace CaterDal
                     sql += " and " + pair.Key + " like '%" + pair.Value + "%' ";
                 }
             }
-
-
             DataTable dt = SqliteHelper.GetDataTable(sql);
             List<MemberInfo> list = new List<MemberInfo>();
             foreach (DataRow row in dt.Rows)
@@ -43,6 +42,38 @@ namespace CaterDal
                 });
             }
             return list;
+        }
+        public int Insert(MemberInfo mi)
+        {
+            string sql = "insert into memberinfo(mtypeid,mname,mphone,mmoney,misDelete) values(@tid,@name,@phone,@money,0) ";
+            SQLiteParameter[] ps =
+            {
+                new SQLiteParameter("@tid",mi.MTypeId),
+                new SQLiteParameter("@name",mi.MName),
+                new SQLiteParameter("@phone",mi.MPhone),
+                new SQLiteParameter("@money",mi.MMoney)
+            };
+            return SqliteHelper.ExecuteNonQuery(sql, ps);
+        }
+        public int Update(MemberInfo mi)
+        {
+            string sql = "update memberinfo set mname=@name,mphone=@phone,mmoney=@money,mtypeid=@tid where mid=@id ";
+            SQLiteParameter[] ps =
+            {
+                new SQLiteParameter("@name",mi.MName),
+                new SQLiteParameter("@phone",mi.MPhone),
+                new SQLiteParameter("@money",mi.MMoney),
+                new SQLiteParameter("@tid",mi.MTypeId),
+                new SQLiteParameter("@id",mi.MId)
+            };
+            //执行,返回
+            return SqliteHelper.ExecuteNonQuery(sql, ps);
+        }
+        public int Delete(int id)
+        {
+            string sql = "update  memberinfo set mIsDelete=1 where mid=@id ";
+            SQLiteParameter p = new SQLiteParameter("@id", id);
+            return SqliteHelper.ExecuteNonQuery(sql, p);
         }
     }
 }
